@@ -1,0 +1,146 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(45deg, #ff6b6b, #ffa94d);
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    font-family: 'Arial Black', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos de la barra superior */
+.barra-superior {
+    background-color: #222;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* Separa los dos grupos de enlaces */
+    align-items: center;
+}
+
+/* Estilos para los enlaces de navegación y usuario */
+.navegacion a,
+.usuario-opciones a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.navegacion a:hover,
+.usuario-opciones a:hover {
+    color: #ffeb3b; /* Cambia el color al pasar el cursor */
+}
+
+.categorias {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.categoria {
+    text-align: center;
+}
+
+.categoria img {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0%;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block; 
+    }
+
+    .menu {
+        display: none; 
+        flex-direction: column;
+        background-color: #444;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        width: 200px;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+}
+
+.categoria {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.categoria:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+.mas-vistos {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mas-vistos h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.mas-vistos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mas-vistos li {
+    background-color: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.mas-vistos li:hover {
+    background-color: #ffeb3b; /* Cambia el color al pasar el cursor */
+}
+
+
