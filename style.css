@@ -31,16 +31,14 @@ header p {
     height: auto;
 }
 
-/* Estilos de la barra superior */
 .barra-superior {
     background-color: #222;
     padding: 10px 20px;
     display: flex;
-    justify-content: space-between; /* Separa los dos grupos de enlaces */
+    justify-content: space-between;
     align-items: center;
 }
 
-/* Estilos para los enlaces de navegación y usuario */
 .navegacion a,
 .usuario-opciones a {
     color: #fff;
@@ -52,7 +50,7 @@ header p {
 
 .navegacion a:hover,
 .usuario-opciones a:hover {
-    color: #ffeb3b; /* Cambia el color al pasar el cursor */
+    color: #ffeb3b;
 }
 
 .categorias {
